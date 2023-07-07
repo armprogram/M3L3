@@ -50,9 +50,9 @@ def form():
 @app.route('/submit', methods=['POST'])
 def submit_form():
     name = request.form['name']
-      email = request.form['email']
-      address = request.form['address']
-      date = request.form['date']
+    email = request.form['email']
+    address = request.form['address']
+    date = request.form['date']
     
     
 
