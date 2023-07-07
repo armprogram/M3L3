@@ -49,6 +49,11 @@ def form():
 #Результаты формы
 @app.route('/submit', methods=['POST'])
 def submit_form():
+    name = request.form['name']
+      email = request.form['email']
+      address = request.form['address']
+      date = request.form['date']
+    
     
 
     #Создай переменные для сбора информации
@@ -57,5 +62,9 @@ def submit_form():
     # здесь вы можете сохранить данные или отправить их по электронной почте
     return render_template('form_result.html', 
                            #Помести переменные
-    )
+                           name = name,
+                           email = email,
+                           address = address,
+                            date = date
+                          )
 app.run(debug=True)
