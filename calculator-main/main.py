@@ -54,6 +54,9 @@ def submit_form():
     address = request.form['address']
     date = request.form['date']
     
+    with open('form.txt', 'a',) as f:
+        f.write(form + '\n
+')
     
 
     #Создай переменные для сбора информации
