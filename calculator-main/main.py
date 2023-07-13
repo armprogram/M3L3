@@ -55,7 +55,7 @@ def submit_form():
     date = request.form['date']
     
 with open('form.txt', 'a',) as f:
-    f.write(name  ,  email  ,  address  ,  date  + '\n
+    f.write(name  + email  + address  + date  + '\n
 ')
     
 
